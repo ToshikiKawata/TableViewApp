@@ -16,6 +16,8 @@
 		97BAEDDB272E4FB00060A049 /* TableViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAEDDA272E4FB00060A049 /* TableViewAppTests.swift */; };
 		97BAEDE5272E4FB00060A049 /* TableViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAEDE4272E4FB00060A049 /* TableViewAppUITests.swift */; };
 		97BAEDE7272E4FB00060A049 /* TableViewAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAEDE6272E4FB00060A049 /* TableViewAppUITestsLaunchTests.swift */; };
+		97BAEDF4272E564A0060A049 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAEDF3272E564A0060A049 /* TableViewController.swift */; };
+		97BAEDF6272E64830060A049 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BAEDF5272E64830060A049 /* AddListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		97BAEDE0272E4FB00060A049 /* TableViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BAEDE4272E4FB00060A049 /* TableViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAppUITests.swift; sourceTree = "<group>"; };
 		97BAEDE6272E4FB00060A049 /* TableViewAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97BAEDF3272E564A0060A049 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		97BAEDF5272E64830060A049 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				97BAEDCC272E4FB00060A049 /* Assets.xcassets */,
 				97BAEDCE272E4FB00060A049 /* LaunchScreen.storyboard */,
 				97BAEDD1272E4FB00060A049 /* Info.plist */,
+				97BAEDF3272E564A0060A049 /* TableViewController.swift */,
+				97BAEDF5272E64830060A049 /* AddListViewController.swift */,
 			);
 			path = TableViewApp;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BAEDC8272E4FAE0060A049 /* ViewController.swift in Sources */,
+				97BAEDF6272E64830060A049 /* AddListViewController.swift in Sources */,
 				97BAEDC4272E4FAE0060A049 /* AppDelegate.swift in Sources */,
 				97BAEDC6272E4FAE0060A049 /* SceneDelegate.swift in Sources */,
+				97BAEDF4272E564A0060A049 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
