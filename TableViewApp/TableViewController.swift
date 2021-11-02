@@ -23,11 +23,6 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -61,6 +56,20 @@ class TableViewController: UITableViewController {
 
         return cell
     }
+    
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//           // 先にデータを削除しないと、エラーが発生します。
+//           self.taskArray.remove(at: indexPath.row)
+//           tableView.deleteRows(at: [indexPath], with: .automatic)
+//    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+          taskArray.remove(at: indexPath.row)
+         tableView.deleteRows(at: [indexPath], with: .fade)
+          
+          let userDefaults = UserDefaults.standard
+                      userDefaults.set(taskArray, forKey: "add")
+     } }
     
     /*
     // Override to support conditional editing of the table view.
